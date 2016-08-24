@@ -51,6 +51,14 @@ FB.getLoginStatus(function(response) {
     }, {scope: 'user_friends, email'});
   }
 });
+  FB.ui({
+  method: 'feed',
+  link: 'https://developers.facebook.com/docs/',
+  description: 'Test',
+  caption: 'An example caption',
+}, function(response){});
+    
+    
   };
   
   
