@@ -28,9 +28,7 @@
       xfbml      : true,
       version    : 'v2.7'
     });
-  };
-  
-  // Place following code after FB.init call.
+    // Place following code after FB.init call.
 
 function onLogin(response) {
   if (response.status == 'connected') {
@@ -53,6 +51,9 @@ FB.getLoginStatus(function(response) {
     }, {scope: 'user_friends, email'});
   }
 });
+  };
+  
+  
 
 
   (function(d, s, id){
